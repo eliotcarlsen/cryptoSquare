@@ -1,14 +1,24 @@
 //backend
- function code(letters){
-   debugger;
-   var letters = letters.toLowerCase();
-   var letters = letters.split(" ")
-   var letters = letters.join();
-   for (var i = 0; i<= letters.length; i ++){
-   var letters = letters.replace("," , "");
+
+function code(letters){
+  var finalArray = [];
+  debugger;
+  var letters = letters.toLowerCase();
+  var letters = letters.split(" ");
+  var letters = letters.join("");
+  var letters = letters.split("");
+  console.log(letters);
+  if (letters.length === 3){
+    for (var i = 0;i < letters.length; i+=2){
+      finalArray.push(letters[i+i]);
       console.log(letters);
- };
+    };
+  };
+  console.log(finalArray);
 };
+
+
+
 
 
 
@@ -18,10 +28,6 @@ $(document).ready(function(){
   $(".userInput").submit(function(event){
     event.preventDefault();
     var inputMod = $('input#sentence').val();
-    var input = code(inputMod);
-    console.log(inputMod);
+    code(inputMod);
   });
-
-
-
 });

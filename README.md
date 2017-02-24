@@ -27,5 +27,3 @@ this program will take a 4 letter sentence and make a 4x4 square with letters in
 input: bark
 output: [b] [a]
         [r] [k]
-
-        
